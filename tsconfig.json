@@ -1,0 +1,17 @@
+{
+  "include": ["components/**/*.ts", "components/**/*.tsx"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "composite": true,
+    "allowJs": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "module": "preserve"
+  },
+  "references": []
+}

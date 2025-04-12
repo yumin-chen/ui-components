@@ -1,0 +1,46 @@
+{
+  "name": "@chen/ui-components",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "files": [
+    "dist",
+    "components",
+    "styles.css"
+  ],
+  "scripts": {
+    "build": "panda && tsc --project tsconfig.json",
+    "format": "npx @biomejs/biome format --write ./components"
+  },
+  "dependencies": {
+    "@chen/design-system": "link:packages/design-system"
+  },
+  "devDependencies": {
+    "@ark-ui/anatomy": "^3.5.0",
+    "@ark-ui/react": "^5.5.0",
+    "@pandacss/dev": "^0.53.3",
+    "@park-ui/panda-preset": "^0.43.1",
+    "@types/react": "^19.1.1",
+    "next": "^14.2.25",
+    "react": "^18.3.1",
+    "tinacms": "^2.7.5"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/components/index.d.ts",
+      "require": "./dist/components/index.mjs",
+      "import": "./dist/components/index.mjs"
+    },
+    "./cms": {
+      "types": "./dist/components/index.cms.d.ts",
+      "require": "./dist/components/index.cms.mjs",
+      "import": "./dist/components/index.cms.mjs"
+    },
+    "./templates": {
+      "types": "./dist/components/index.template.d.ts",
+      "require": "./dist/components/index.template.mjs",
+      "import": "./dist/components/index.template.mjs"
+    },
+    "./styles.css": "./styles.css"
+  }
+}
