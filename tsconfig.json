@@ -10,8 +10,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "moduleResolution": "nodenext",
-    "module": "NodeNext"
+    "moduleResolution": "bundler",
+    "module": "ESNext"
   },
   "references": []
 }
