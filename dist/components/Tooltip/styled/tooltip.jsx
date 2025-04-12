@@ -1,0 +1,13 @@
+"use client";
+import { Tooltip } from "@ark-ui/react/tooltip";
+import { tooltip } from "@chen/design-system/recipes";
+import { createStyleContext } from "./utils/create-style-context";
+var _a = createStyleContext(tooltip), withRootProvider = _a.withRootProvider, withContext = _a.withContext;
+export var RootProvider = withRootProvider(Tooltip.RootProvider);
+export var Root = withRootProvider(Tooltip.Root);
+export var Arrow = withContext(Tooltip.Arrow, "arrow");
+export var ArrowTip = withContext(Tooltip.ArrowTip, "arrowTip");
+export var Content = withContext(Tooltip.Content, "content");
+export var Positioner = withContext(Tooltip.Positioner, "positioner");
+export var Trigger = withContext(Tooltip.Trigger, "trigger");
+export { TooltipContext as Context } from "@ark-ui/react/tooltip";

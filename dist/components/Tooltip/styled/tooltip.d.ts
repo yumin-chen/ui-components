@@ -1,0 +1,14 @@
+import type { Assign } from "@ark-ui/react";
+import { Tooltip } from "@ark-ui/react/tooltip";
+import { type TooltipVariantProps } from "@chen/design-system/recipes";
+import type { ComponentProps, HTMLStyledProps } from "@chen/design-system/types";
+export type RootProviderProps = ComponentProps<typeof RootProvider>;
+export declare const RootProvider: (props: Assign<Tooltip.RootProviderProps, TooltipVariantProps>) => import("react").JSX.Element;
+export type RootProps = ComponentProps<typeof Root>;
+export declare const Root: (props: Assign<Tooltip.RootProps, TooltipVariantProps>) => import("react").JSX.Element;
+export declare const Arrow: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Tooltip.ArrowBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const ArrowTip: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Tooltip.ArrowTipBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Content: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Tooltip.ContentBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Positioner: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Tooltip.PositionerBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Trigger: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"button">, Tooltip.TriggerBaseProps>, "ref"> & import("react").RefAttributes<HTMLButtonElement>>;
+export { TooltipContext as Context } from "@ark-ui/react/tooltip";

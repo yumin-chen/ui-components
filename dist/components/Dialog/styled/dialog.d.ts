@@ -1,0 +1,16 @@
+import type { Assign } from "@ark-ui/react";
+import { Dialog } from "@ark-ui/react/dialog";
+import { type DialogVariantProps } from "@chen/design-system/recipes";
+import type { ComponentProps, HTMLStyledProps } from "@chen/design-system/types";
+export type RootProviderProps = ComponentProps<typeof RootProvider>;
+export declare const RootProvider: (props: Assign<Dialog.RootProviderProps, DialogVariantProps>) => import("react").JSX.Element;
+export type RootProps = ComponentProps<typeof Root>;
+export declare const Root: (props: Assign<Dialog.RootProps, DialogVariantProps>) => import("react").JSX.Element;
+export declare const Backdrop: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Dialog.BackdropBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const CloseTrigger: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"button">, Dialog.CloseTriggerBaseProps>, "ref"> & import("react").RefAttributes<HTMLButtonElement>>;
+export declare const Content: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Dialog.ContentBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Description: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Dialog.DescriptionBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Positioner: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"div">, Dialog.PositionerBaseProps>, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
+export declare const Title: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"h2">, Dialog.TitleBaseProps>, "ref"> & import("react").RefAttributes<HTMLHeadingElement>>;
+export declare const Trigger: import("react").ForwardRefExoticComponent<Omit<Assign<HTMLStyledProps<"button">, Dialog.TriggerBaseProps>, "ref"> & import("react").RefAttributes<HTMLButtonElement>>;
+export { DialogContext as Context } from "@ark-ui/react/dialog";

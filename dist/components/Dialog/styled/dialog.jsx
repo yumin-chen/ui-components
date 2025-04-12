@@ -1,0 +1,15 @@
+"use client";
+import { Dialog } from "@ark-ui/react/dialog";
+import { dialog } from "@chen/design-system/recipes";
+import { createStyleContext } from "./utils/create-style-context";
+var _a = createStyleContext(dialog), withRootProvider = _a.withRootProvider, withContext = _a.withContext;
+export var RootProvider = withRootProvider(Dialog.RootProvider);
+export var Root = withRootProvider(Dialog.Root);
+export var Backdrop = withContext(Dialog.Backdrop, "backdrop");
+export var CloseTrigger = withContext(Dialog.CloseTrigger, "closeTrigger");
+export var Content = withContext(Dialog.Content, "content");
+export var Description = withContext(Dialog.Description, "description");
+export var Positioner = withContext(Dialog.Positioner, "positioner");
+export var Title = withContext(Dialog.Title, "title");
+export var Trigger = withContext(Dialog.Trigger, "trigger");
+export { DialogContext as Context } from "@ark-ui/react/dialog";
